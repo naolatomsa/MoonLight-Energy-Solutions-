@@ -156,4 +156,3 @@ def eda_benin():
         xlabel='Global Horizontal Irradiance (GHI)',
         ylabel='Ambient Temperature (Tamb)'
     )
-
