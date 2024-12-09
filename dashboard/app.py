@@ -1,7 +1,7 @@
 import streamlit as st
-from EDA.benin import eda_benin
-from EDA.sierraleone import eda_sierraleone
-from EDA.togo import eda_togo
+from benin import eda_benin
+from sierraleone import eda_sierraleone
+from togo import eda_togo
 
 # Set page configuration
 st.set_page_config(page_title="EDA", layout="wide")
