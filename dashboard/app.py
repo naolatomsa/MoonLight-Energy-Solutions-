@@ -443,7 +443,7 @@ about_button = st.sidebar.button("Togo Dapaong Qc")
 if home_button:
     st.title("EDA for Benin Malanville")
 # Load the dataset
-    data = pd.read_csv("data/benin-malanville.csv")
+    data = pd.read_csv('data/benin-malanville.csv')
 
     # Display summary statistics
     st.subheader("Summary Statistics")
