@@ -22,6 +22,9 @@ from timeSeriesAnalysisMonthlyAndDailyTrend import analyze_and_plot_hourly_trend
 from windAnalysis import analyze_wind
 from zScore import z_score_analysis
 
+import os
+
+
 def eda_sierraleone():
     # Load the dataset
     data = pd.read_csv("data/sierraleone-bumbuna.csv")
@@ -443,7 +446,8 @@ about_button = st.sidebar.button("Togo Dapaong Qc")
 if home_button:
     st.title("EDA for Benin Malanville")
 # Load the dataset
-    data = pd.read_csv('data/benin-malanville.csv')
+    data_path = os.path.join(os.getcwd(), "data", "benin-malanville.csv")
+    data = pd.read_csv(data_path)
 
     # Display summary statistics
     st.subheader("Summary Statistics")
